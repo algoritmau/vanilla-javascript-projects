@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  --typeface-body-copy: 'Lato', sans-serif;
+  --color-background: #242323;
+  --color-foreground: #ccc;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 36rem;
+  padding: 3.2rem;
+  background-color: #fefefe08;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__movies {
+  margin-block-end: 2.4rem;
+}
+
+.app__movies__picker {
+  background-color: fefefe;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-family: var(--typeface-body-copy);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-inline-start: 8px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-block-end: 1.6rem;
+  background-color: rgba(0 0 0 / 0.1);
+  color: #929090;
+  padding: 1.6rem 1.2rem;
+  border-radius: 4px;
+}
+
+.legend__key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.theater {
+  margin-block-end: 3.2rem;
+  perspective: 100rem;
+}
+
+.theater__screen {
+  background-color: #fefefe;
+  height: 7.2rem;
+  width: 100%;
+  margin: 1.6rem 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255 255 255 / 0.7);
+}
+
+.theater__row {
+  display: flex;
+}
+
+.theater__seat {
+  width: 1.5rem;
+  height: 1.2rem;
+  background-color: #444451;
+  margin: 3px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.theater__seat:nth-of-type(2),
+.theater__seat:nth-of-type(6) {
+  margin-inline-end: 1.6rem;
+}
+
+.theater__seat.selected {
+  background-color: #6feaf6;
+}
+
+.theater__seat.occupied {
+  background-color: #fefefe;
+}
+
+.theater__seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.legend .theater__seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.app__order {
+  width: 80%;
+  text-align: center;
+  line-height: 144%;
+}
+
+.app__order__count,
+.app__order__total {
+  color: #6feaf6;
+}

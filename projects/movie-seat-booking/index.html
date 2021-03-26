@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+
+  <body>
+    <main class="app">
+      <div class="app__movies">
+        <label for="movie-picker">Pick a movie</label>
+        <select name="movies" id="movie-picker" class="app__movies__picker">
+          <option value="8">To Kill a Mockingbird ($8)</option>
+          <option value="7">Inception ($7)</option>
+          <option value="10">The Matrix ($10)</option>
+          <option value="12">The Lion King ($12)</option>
+        </select>
+      </div>
+
+      <ul class="legend">
+        <li class="legend__key">
+          <div class="theater__seat"></div>
+          <small>Available</small>
+        </li>
+        <li class="legend__key">
+          <div class="theater__seat selected"></div>
+          <small>Selected</small>
+        </li>
+        <li class="legend__key">
+          <div class="theater__seat occupied"></div>
+          <small>Occupied</small>
+        </li>
+      </ul>
+
+      <div class="theater">
+        <div class="theater__screen"></div>
+        <div class="theater__row">
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+        </div>
+        <div class="theater__row">
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+        </div>
+        <div class="theater__row">
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat occupied"></div>
+        </div>
+        <div class="theater__row">
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+        </div>
+        <div class="theater__row">
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+        </div>
+        <div class="theater__row">
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat occupied"></div>
+          <div class="theater__seat"></div>
+        </div>
+      </div>
+
+      <p class="app__order">
+        You have selected
+        <span class="app__order__count" id="order-seats-count">0</span> seats
+        for a total of $<span class="app__order__total" id="order-total-amount"
+          >0</span
+        >.
+      </p>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
