@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 4rem 0;
+  background-color: ghostwhite;
+}
+
+.app {
+  padding: 2.4rem;
+  width: 100%;
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.app__video {
+  width: 88%;
+}
+
+.app__controls {
+  width: 64%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.app__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem;
+  background-color: hsl(0, 0%, 86%);
+  cursor: pointer;
+}
