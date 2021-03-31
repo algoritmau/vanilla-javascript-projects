@@ -1,10 +1,13 @@
 @import url('https://use.typekit.net/rwl1adx.css');
 
 :root {
-  --typeface-body-copy: Inter, sans-serif;
+  --typeface-body-copy: antarctican-mono, sans-serif;
+  --typeface-headings: mono45-headline, monospace;
 
   --color-foreground: #242424;
   --color-background: #fefefe;
+  --color-gray: #8b8b8b;
+  --color-accent-mono: hsl(0, 0%, 18%);
 }
 
 html {
@@ -25,6 +28,8 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -46,9 +51,13 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: var(--typeface-headings);
   font-weight: 700;
   font-style: normal;
-  letter-spacing: -0.04rem;
+}
+
+h1 {
+  line-height: 120%;
 }
 
 img {
@@ -57,7 +66,9 @@ img {
 }
 
 code {
-  font-family: var(--typeface-monospace) !important;
+  font-family: var(--typeface-body-copy) !important;
+  font-weight: 400;
+  font-style: italic;
 }
 
 *::selection {
